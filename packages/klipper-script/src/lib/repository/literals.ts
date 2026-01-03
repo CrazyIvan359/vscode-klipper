@@ -14,7 +14,7 @@ export const stringLiteral: TMGrammarScope = {
 	patterns: [
 		{
 			name: "string.klipper-script",
-			begin: /(?<!\\)(')|\\\\(')/,
+			begin: /(?<!\\)(')/,
 			beginCaptures: {
 				1: { name: "punctuation.definition.string.begin.klipper-script" },
 			},
@@ -26,7 +26,7 @@ export const stringLiteral: TMGrammarScope = {
 		},
 		{
 			name: "string.klipper-script",
-			begin: /(?<!\\)(")|\\\\(")/,
+			begin: /(?<!\\)(")/,
 			beginCaptures: {
 				1: { name: "punctuation.definition.string.begin.klipper-script" },
 			},
